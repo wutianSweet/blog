@@ -85,3 +85,6 @@ export default ErrorBoundaryHOC(Counter);
 ## 异常上报
 
 在 componentDidCatch 中我们可以通过接入监控，上报出错的组件相关信息
+
+## 总结
+通过 ErrorBoundaryHOC 包裹子组件，能够最小颗粒度的控制组件错误影响范围，降低页面崩溃概率。配合监控上报，能够很快定位到异常组件，大大增强了代码的健壮性
